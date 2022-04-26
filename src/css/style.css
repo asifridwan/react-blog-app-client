@@ -1,0 +1,488 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: #0ea6f4;
+  height: 7vh;
+}
+
+button, input, textarea{
+  border: none;
+  outline: none;
+  background: none;
+}
+
+footer{
+  background-color: #272727;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.inline-centering{
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon{
+  background-image: url('../images/blog_logo_white.png');
+  background-size: cover;
+  height: 36px;
+  width: 36px;
+}
+
+.logo-text{
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.blog-view, .blog-home{
+  min-height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-view-wrapper, .blog-home-wrapper{
+  margin: 50px 0px;
+  width: 50vw;
+}
+
+.back-button, .add-button{
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.back-button{
+  background-color: #8415eb;
+}
+
+.back-button:hover{
+  background-color: #6116a7;
+  cursor: pointer;
+}
+
+.blog-post, .paginated-view-container{
+  margin-top: 60px;
+}
+
+.blog-date{
+  font-size: 12px;
+  font-weight: 600;
+  color: #707070;
+}
+
+.blog-title{
+  margin-top: 10px;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.blog-content{
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.comment-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #c5c5c5;
+  margin-top: 50px;
+  border-radius: 4px;
+  padding: 15px 12px;
+}
+
+.form-title{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.user-name, .user-comment, .submit-comment{
+  font-size: 15px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+.user-name, .user-comment, .post-title, .post-content, .post-date{
+  border: 1px solid #9c9c9c;
+}
+
+.user-name:focus, .user-comment:focus, .post-title:focus, .post-content:focus, .post-date:focus{
+  border: 1px solid #0ea6f4;
+}
+
+.user-comment{
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-comment{
+  background-color: #0ea6f4;
+  color: white;
+  font-weight: 500;
+}
+
+.submit-comment:hover{
+  background-color: #157ed4;
+  cursor: pointer;
+}
+
+.comment-section{
+  margin-top: 35px;
+}
+
+.comments-container{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reply-container{
+  margin-left: 8%;
+}
+
+.reply{
+  background-color: #e2f5ff;
+}
+
+.comment-card{
+  border: 1px solid #c5c5c5;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.comment-info-container{
+  display: flex;
+}
+
+.comment-author-pic{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: url('../images/user_icon.png');
+  background-size: cover;
+}
+
+.comment-maker-details{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.comment-username{
+  margin-left: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #6116a7;
+}
+
+.comment-time{
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #686868;
+}
+
+.comment-body, .reply-option{
+  margin-top: 12px;
+}
+
+.reply-option{
+  font-size: 14px;
+  font-weight: 500;
+  color: #157ed4;
+}
+
+.reply-option:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.not-found-view{
+  min-height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-thingy{
+  background-color: #fff6a9;
+  border-left: 10px solid #b12a08;
+  padding: 30px 50px;
+}
+
+.error-header{
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #9b2111;
+}
+
+.error-body{
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #bb1010;
+}
+
+.add-button{
+  background-color: #2cda91;
+}
+
+.add-button:hover{
+  background-color: #37c784;
+  cursor: pointer;
+}
+
+.blog-demo{
+  margin-top: 20px;
+  padding: 18px 12px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+}
+
+.blog-demo-title{
+  font-size: 30px;
+  font-weight: 600;
+  color: #157ed4;
+}
+
+.blog-demo-title:hover{
+  text-decoration: underline;
+}
+
+.blog-demo-date{
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #979797;
+}
+
+.pagination-container{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-buttons{
+  list-style: none;
+  display: flex;
+}
+
+.pagination-buttons a{
+  border: 1px solid #0ea6f4;
+  color: #0ea6f4;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  margin: 0px 8px;
+}
+
+.pagination-buttons a:hover, .paginate-active a{
+  cursor: pointer;
+  background-color: #0ea6f4;
+  color: white;
+}
+
+.overlay-style{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.modal-container{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  width: inherit;
+}
+
+.modal-form{
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px solid #c5c5c5;
+  width: 30vw;
+}
+
+.modal-centering{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-heading{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.post-title, .post-content, .post-date, .error-message, .submit-post, .cancel-post{
+  font-size: 18px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.post-title, .post-content, .post-date, .error-message{
+  padding: 12px 18px;
+  font-weight: 300;
+}
+
+.post-content{
+  min-height: 200px;
+  resize: vertical;
+}
+
+.error-message{
+  background-color: #ffecae;
+  border: 2px solid #e72315;
+  color: #e72315;
+}
+
+.submit-post, .cancel-post{
+  color: white;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.submit-post{
+  background-color: #23cf70;
+}
+
+.submit-post:hover{
+  background-color: #1fb462;
+  cursor: pointer;
+}
+
+.cancel-post{
+  background-color: #dd2019;
+  margin-left: 80px;
+}
+
+.cancel-post:hover{
+  background-color: #af1d18;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  .logo-icon{
+    height: 25px;
+    width: 25px;
+  }
+
+  .logo-text{
+    font-size: 14px;
+  }
+
+  footer{
+    font-size: 10px;
+    padding: 12px 0px;
+  }
+
+  .not-found-thingy{
+    padding: 15px 30px;
+  }
+  
+  .error-header{
+    font-size: 20px;
+  }
+
+  .error-body{
+    font-size: 15px;
+  }
+  
+  .blog-demo-title{
+    font-size: 20px;
+  }
+
+  .blog-demo-date{
+    font-size: 9px;
+  }
+
+  .pagination-buttons a{
+    font-size: 12px;
+    padding: 3px 6px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 912px){
+  .blog-view-wrapper, .blog-home-wrapper{
+    width: 80vw;
+  }
+
+  .back-button, .user-name, .user-comment, .submit-comment, .comment-username, .reply-option, .add-button{
+    font-size: 12px;
+  }
+
+  .comment-author-pic{
+    height: 35px;
+    width: 35px;
+  }
+
+  .blog-date, .comment-time{
+    font-size: 10px;
+  }
+
+  .blog-title{
+    font-size: 22px;
+  }
+
+  .blog-content, .comment-body{
+    font-size: 14px;
+  }
+
+  .form-title{
+    font-size: 18px;
+  }
+
+  .modal-form{
+    width: 70vw;
+  }
+
+  .modal-heading{
+    font-size: 20px;
+  }
+
+  .post-title, .post-content, .post-date, .error-message, .submit-post, .cancel-post{
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .post-title, .post-content, .post-date, .error-message{
+    padding: 5px 8px;
+  }
+
+  .post-content{
+    min-height: 100px;
+  }
+
+  .submit-post, .cancel-post{
+    padding: 4px 6px;
+  }
+}
