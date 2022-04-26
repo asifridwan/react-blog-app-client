@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-blog-app-client/static/css/main.19ddf4ff.css",
-    "main.js": "/react-blog-app-client/static/js/main.9fcf39ea.js",
+    "main.js": "/react-blog-app-client/static/js/main.3a20f569.js",
     "index.html": "/react-blog-app-client/index.html",
     "main.19ddf4ff.css.map": "/react-blog-app-client/static/css/main.19ddf4ff.css.map",
-    "main.9fcf39ea.js.map": "/react-blog-app-client/static/js/main.9fcf39ea.js.map"
+    "main.3a20f569.js.map": "/react-blog-app-client/static/js/main.3a20f569.js.map"
   },
   "entrypoints": [
     "static/css/main.19ddf4ff.css",
-    "static/js/main.9fcf39ea.js"
+    "static/js/main.3a20f569.js"
   ]
 }
